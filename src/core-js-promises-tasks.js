@@ -20,9 +20,9 @@
 function getPromise(number) {
   return new Promise((resolve, reject) => {
     if (number >= 0) {
-      resolve(console.log('Success!'));
+      resolve('Success!');
     } else {
-      reject(console.log('error!'));
+      reject(new Error('error!'));
     }
   });
 }
